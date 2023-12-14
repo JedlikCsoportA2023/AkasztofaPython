@@ -40,6 +40,7 @@ def betu_tipp():
         if betu != tipp_betu:
             probalkozasok_szama += -1
 
+
         print('')
         print(f'                   {reszleges_szo}       ({len(random_szo)} betűből áll')
         print('')
