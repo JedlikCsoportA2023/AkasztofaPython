@@ -9,3 +9,14 @@ felhasznalt_betuk = []
 
 for betu in randomsz:
     random_szo += betu
+
+def reszleges_szo_lista() -> list:
+    
+    for betu in random_szo:
+        reszleges_szo.append('_')
+
+    print('')
+    print(f'{reszleges_szo}        ({len(random_szo)} betűből áll)')
+    print('')
+
+    return reszleges_szo
