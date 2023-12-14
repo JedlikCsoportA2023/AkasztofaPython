@@ -6,3 +6,6 @@ random_szo = []
 reszleges_szo = []
 jelenlegi_index = 0
 felhasznalt_betuk = []
+
+for betu in randomsz:
+    random_szo += betu
