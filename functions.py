@@ -39,3 +39,16 @@ def betu_tipp():
 
         if betu != tipp_betu:
             probalkozasok_szama += -1
+
+        print('')
+        print(f'                   {reszleges_szo}       ({len(random_szo)} betűből áll')
+        print('')
+        print(f'Felhasznált betűk: {felhasznalt_betuk}')
+        print('')
+        if probalkozasok_szama > 0:
+            print(f'Hátralevő próbálkozások:{probalkozasok_szama}')
+
+        elif probalkozasok_szama == 0:
+            print(f'                    VESZTETTÉL!  A szó: {randomsz} volt!')    
+
+    return reszleges_szo, probalkozasok_szama
