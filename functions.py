@@ -16,14 +16,14 @@ def reszleges_szo_lista() -> list:
         reszleges_szo.append('_')
 
     print('')
-    print(f'{reszleges_szo}        ({len(random_szo)} betűből áll)')
+    print(f'{reszleges_szo}        ({len(random_szo)} betű)')
     print('')
 
     return reszleges_szo
 
 def betu_tipp():
     probalkozasok_szama = 2 * len(random_szo)
-    print(f'Hátralevő próbálkozások:{probalkozasok_szama}')
+    print(f'Hátralevő életek:{probalkozasok_szama}')
 
 
     while reszleges_szo != random_szo and probalkozasok_szama >= 1:
@@ -47,13 +47,15 @@ def betu_tipp():
         print(f'Felhasznált betűk: {felhasznalt_betuk}')
         print('')
         if probalkozasok_szama > 0:
-            print(f'Hátralevő próbálkozások:{probalkozasok_szama}')
+            print(f'Hátralevő életek:{probalkozasok_szama}')
 
         elif probalkozasok_szama == 0:
-            print(f'                    VESZTETTÉL!  A szó: {randomsz} volt!')    
+            print(f'                    VESZTETTÉL!  A random szó: {randomsz} volt!')    
 
     return reszleges_szo, probalkozasok_szama
 
 def nyereseg():
+
     if reszleges_szo == random_szo:
-        print(f'                    NYERTÉL!  A szó: {randomsz} volt!')
+        print(f'                    GYŐZTÉL!  A random szó: {randomsz} volt!')
+
