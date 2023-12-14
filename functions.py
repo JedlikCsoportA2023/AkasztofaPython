@@ -53,7 +53,6 @@ def betu_tipp():
             print(f'                    VESZTETTÉL!  A szó: {randomsz} volt!')    
 
     return reszleges_szo, probalkozasok_szama
-
 def nyereseg():
     if reszleges_szo == random_szo:
         print(f'                    NYERTÉL!  A szó: {randomsz} volt!')
