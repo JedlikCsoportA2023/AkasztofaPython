@@ -30,3 +30,12 @@ def betu_tipp():
         jelenlegi_index = -1
         tipp_betu = input('Adj meg egy betűt: ')
         felhasznalt_betuk.append(tipp_betu)
+
+        for betu in random_szo:
+            jelenlegi_index += 1
+            if betu == tipp_betu:
+                reszleges_szo[jelenlegi_index] = betu
+                probalkozasok_szama += 1
+
+        if betu != tipp_betu:
+            probalkozasok_szama += -1
